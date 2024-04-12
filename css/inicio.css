@@ -1,0 +1,300 @@
+body {
+    margin-top: 100px;
+    background: url("../imagenes/fondo1.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: "Arbutus", serif;
+}
+
+.container1 {
+    background-color: black;
+    height: 15vh;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    font-family: "Arbutus", serif;
+    font-weight: 400;
+    font-style: normal;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    padding-left: 3vh;
+}
+
+.menu {
+    padding-right: 6vh;
+}
+
+.menu a {
+    color: white;
+    text-decoration: none;
+    margin-left: 10px;
+    padding: 2vh;
+}
+
+.menu-link {
+    color: white;
+    text-decoration: none;
+    margin-left: 10px;
+    padding: 2vh;
+    position: relative;
+}
+
+.menu-link::before {
+    content: "";
+    position: absolute;
+    top: 10%;
+    left: -5px;
+    width: calc(100% + 10px);
+    height: calc(100% - 4px);
+    background-color: white;
+    border-radius: 20px;
+    z-index: -1;
+    opacity: 0;
+    /* Inicialmente oculto */
+    transition: opacity 0.3s ease;
+    /* Transición de opacidad */
+}
+
+.menu-link:hover::before {
+    opacity: 1;
+    /* Mostrar al pasar el ratón */
+}
+
+.menu-link:hover {
+    color: black;
+}
+
+.musica {
+    height: 12vh;
+    width: 100px;
+    padding-right: 9vh;
+    padding-bottom: 3vh;
+}
+
+.musica2-img {
+    height: 12vh;
+    width: 100px;
+    padding-right: 9vh;
+    padding-bottom: 3vh;
+
+}
+
+
+@keyframes vibrar {
+    0% {
+        transform: translateX(-1px) translateY(-1px);
+    }
+
+    50% {
+        transform: translateX(1px) translateY(1px);
+    }
+
+    100% {
+        transform: translateX(-1px) translateY(-1px);
+    }
+}
+
+.vibrante {
+    animation: vibrar 0.5s infinite alternate;
+    /* Aplica la animación de vibración */
+}
+
+.logo {
+    padding-top: 2vh;
+    padding-left: 3vh;
+}
+
+.container {
+    padding-left: 90vh;
+    padding-top: 36vh;
+    position: relative;
+    width: 200px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    /* Centra horizontalmente */
+    align-items: center;
+    /* Centra verticalmente */
+}
+
+.fondo1 {
+    height: 70vh;
+    width: 150vh;
+}
+
+.image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.hidden {
+    display: none;
+}
+
+.container2 {
+    position: fixed;
+    top: 50%;
+
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+}
+
+.redondo {
+    height: 50px;
+    width: 170px;
+    background-color: black;
+    border-radius: 20px;
+    margin-bottom: 5px;
+    display: flex;
+    align-items: center;
+    padding: 5px;
+}
+
+.redondo-imagen {
+    width: 60px;
+    /* Ajusta el tamaño del logo según lo necesites */
+    height: auto;
+    /* Para mantener la proporción */
+    margin-right: 5px;
+}
+
+.redondo-texto {
+    color: white;
+    font-family: "Arbutus", serif;
+}
+
+.scroll-down {
+    font-size: 30px;
+    position: fixed;
+
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    color: black;
+    font-family: "Arbutus", serif;
+}
+
+.scroll-text {
+    margin-bottom: 5px;
+}
+
+.flecha-abajo {
+    width: 30px;
+    /* Ajusta el tamaño de la flecha según necesites */
+    height: auto;
+    /* Para mantener la proporción */
+}
+
+.rectangulo-negro {
+    position: fixed;
+    margin-top: -200px;
+    margin-left: 90%;
+    width: 2%;
+    border-radius: 10%;
+    /* Porcentaje del ancho de la ventana */
+    height: 20vh;
+    /* 100% del viewport height */
+    background-color: black;
+    /* Color del rectángulo */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+/* Triángulo hacia arriba */
+.triangulo-arriba {
+    width: 0;
+    height: 0;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    border-bottom: 30px solid white;
+    /* Color del botón */
+    align-self: center;
+    cursor: pointer;
+}
+
+/* Triángulo hacia abajo */
+.triangulo-abajo {
+    width: 0;
+    height: 0;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    border-top: 30px solid white;
+    /* Color del botón */
+    align-self: center;
+    cursor: pointer;
+}
+
+
+.container {
+    position: relative;
+    width: 800px;
+    /* Ancho del contenedor */
+    height: 200px;
+    /* Altura del contenedor */
+    margin-top: -10px;
+    /* Ajusta el margen superior según necesites */
+    margin-left: 50%;
+    /* Centra horizontalmente */
+    transform: translateX(-50%);
+}
+
+.fondo1 {
+    width: 140%;
+    height: 400px;
+    margin-top: -14vh;
+    margin-left: -550px;
+}
+
+.banner {
+    position: absolute;
+    margin-top: -12vh;
+    margin-left: -550px;
+    width: 20%;
+    /* Ajusta el tamaño de la imagen del banner */
+    height: 20vh;
+    /* Ajusta el tamaño de la imagen del banner */
+}
+
+footer {
+    background-color: black;
+    color: white;
+    padding: 5px 0;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    /* Centra horizontalmente */
+    align-items: center;
+    /* Centra verticalmente */
+}
+
+/* Estilos para las imágenes */
+footer img {
+    width: auto;
+    height: 70px;
+    margin: 0 20px;
+    cursor: pointer;
+}
+
+/* Estilos para los textos */
+footer a {
+    color: white;
+    text-decoration: none;
+    margin: 0 20px;
+    display: inline-block;
+    /* Asegura que los enlaces se comporten como bloques en línea */
+}

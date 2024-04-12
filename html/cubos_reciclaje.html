@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="ca">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SAVE and RECYCLE</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Arbutus&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/inicio.css">
+    <link rel="stylesheet" href="../css/sobre_juego.css">
+    <link rel="stylesheet" href="../css/noticias.css">
+</head>
+
+<body>
+    <div class="container1">
+        <img src="../imagenes/logo.png" alt="" class="logo">
+        <nav class="menu">
+            <a href="inicio.html" class="menu-link">INICI</a>
+            <a href="sobre_juego.html" class="menu-link">SOBRE EL JOC</a>
+            <a href="consejos.html" class="menu-link">CONSELLS</a>
+            <a href="noticias.html" class="menu-link">NOTÍCIES</a>
+            <a href="cubos_reciclaje.html" class="menu-link">CONTENIDORS DE RECICLATGE</a>
+            <a href="contactanos.html" class="menu-link">CONTACTA'NS</a>
+
+        </nav>
+        <img src="../imagenes/musica.png" alt="" class="musica vibrante" id="musica vibrante" />
+        <img src="../imagenes/musica_off.png" alt="" class="musica2-img" style="display:none;" id="musica1" />
+    </div>
+
+
+    <div class="imagen-container">
+        <img src="../imagenes/triangulo.png" alt="Imatge" width="200">
+        <!-- Ajusta la ruta i l'amplada segons sigui necessari -->
+    </div>
+
+    <div class="texto-encima">
+        CONTENIDORS DE RECICLATGE<br><br>
+
+        <span>5</span>
+    </div>
+
+    <div class="descripcion-container">
+
+        <!-- Carrusel d'imatges -->
+        <div class="carousel">
+            <!-- Slides -->
+            <div class="slide active texto-imagen-container">
+                <h2>CONTENIDOR DE RECICLATGE DEL PAPER</h2>
+                <p>
+                    Color del contenidor: blau clar o gris clar<br>
+                    Contingut del contenidor: Paper d'oficina, diaris,<br>
+                    revistes, cartró, tetrabrick, altres productes de paper.
+                </p>
+                <img src="../imagenes/contenedor_papel.jpg" alt="Imatge Descriptiva"
+                    class="slide-img, imagen-descriptiva ">
+
+
+            </div>
+            <div class="slide texto-imagen-container">
+                <h2>CONTENIDOR DE RECICLATGE DE VIDRE</h2>
+                <p>
+                    Color del contenidor: verd o verd fosc<br>
+                    Contingut del contenidor: Ampolles de vidre, pots de vidre,<br>
+                    envasos de vidre, pots de conserva, altres productes de vidre.
+                </p>
+                <img src="../imagenes/contenedor_vidrio.jpg" alt="Imatge Descriptiva"
+                    class="slide-img, imagen-descriptiva">
+
+
+            </div>
+            <div class="slide texto-imagen-container">
+                <h2>CONTENIDOR DE RECICLATGE DE PLÀSTIC</h2>
+                <p>
+                    Color del contenidor: groc o verd clar<br>
+                    Contingut del contenidor: Ampolles de plàstic, envasos de plàstic,<br>
+                    bosses de plàstic, embolcalls de plàstic, envasos de iogurt,<br>
+                    altres productes de plàstic.
+                </p>
+                <img src="../imagenes/contenedor_plastico.jpg" alt="Imatge Descriptiva"
+                    class="slide-img, imagen-descriptiva">
+
+
+            </div>
+            <div class="slide texto-imagen-container">
+                <h2>CONTENIDOR DE RECICLATGE DE METALL</h2>
+                <p>
+                    Color del contenidor: gris o platejat<br>
+                    Contingut del contenidor: Llaunes d'alumini, llaunes de conserva,<br>
+                    tapes de metall, envasos de metall, altres productes de metall.
+
+                </p>
+                <img src="../imagenes/contenedor_metal.jpg" alt="Imatge Descriptiva"
+                    class="slide-img, imagen-descriptiva">
+
+            </div>
+            <div class="slide texto-imagen-container">
+                <h2>CONTENIDOR DE RECICLATGE DE MATÈRIA ORGÀNICA</h2>
+                <p>
+                    Color del contenidor: marró o verd fosc<br>
+                    Contingut del contenidor: Restes d'aliments, escorces de fruites i verdures,<br>
+                    grinyols de cafè i bossetes de te, residus de jardineria, altres productes biodegradables.
+                </p>
+                <img src="../imagenes/contenedor_organico.jpeg" alt="Imatge Descriptiva"
+                    class="slide-img, imagen-descriptiva">
+
+
+            </div>
+            <div class="slide texto-imagen-container">
+                <h2>CONTENIDOR DE RECICLATGE DE RESIDUS PELIGROSOS</h2>
+                <p>
+                    Color del contenidor: taronja o vermell<br>
+                    Contingut del contenidor: Piles i bateries, bombetes fluorescents,<br>
+                    productes químics domèstics, medicaments vençuts, altres materials perillosos.
+                </p>
+                <img src="../imagenes/contenedor_peligrosos.jpg" alt="Imatge Descriptiva"
+                    class="slide-img, imagen-descriptiva">
+
+
+            </div>
+
+            <!-- Botons de navegació -->
+        </div>
+    </div>
+    <div class="nav-buttons">
+        <img src="../imagenes/caret-izquierda.png" alt="Anterior" class="nav-button left" onclick="plusSlides(-1)">
+        <img src="../imagenes/caret-derecha.png" alt="Siguiente" class="nav-button right" onclick="plusSlides(1)">
+    </div>
+    <div class="rectangulo-negro">
+        <!-- Triàngle cap amunt -->
+        <a href="#" id="arrow-up">
+            <div class="triangulo-arriba"></div>
+        </a>
+        <b><span style="color: white; font-size: 30px; padding-left: 5px;">5</span></b>
+        <!-- Triàngle cap avall -->
+        <a href="#" id="arrow-down">
+            <div class="triangulo-abajo"></div>
+        </a>
+    </div>
+
+    <div class="scroll-thumb" id="scroll-thumb">
+        <img src="../imagenes/flecha_arriba.png" alt="Fletxa Amunt">
+        <span id="scroll-number">5</span>
+        <img src="../imagenes/flecha_abajo.png" alt="Fletxa Avall">
+    </div>
+    <footer>
+        <a href="https://web.gencat.cat/ca/inici" target="_blank"><img src="../imagenes/logo_generalitat.png"
+                alt="Imatge 1"></a>
+        <a href="https://mataro.escolapia.cat/" target="_blank"><img src="../imagenes/logo_pia.png" alt="Imatge 2"></a>
+        <a href="https://dotacio.fundacio.cat/bases/" target="_blank"><img src="../imagenes/logo_fundacio_cat.png"
+                alt="Imatge 3"></a>
+        <a href="https://www.cdmon.com/es/?mtm_campaign=18084749671&mtm_kwd=cdmon&mtm_source=google&mtm_medium=cpc&mtm_content=617336363920&gad_source=1&gclid=CjwKCAjw8diwBhAbEiwA7i_sJf6B7P__4OXBDmQ6eb008ZsLNyT4J_P-sUxWNuMQfkPCFFx7mFGwERoCqtMQAvD_BwE"
+            target="_blank"><img src="../imagenes/logo_cdmon.png" alt="Imatge 4"></a>
+
+        <a href="nosotros.html">Nosaltres</a>
+    </footer>
+
+
+    <script src="../javascript/inicio.js"></script>
+</body>
+
+
+
+
+<!-- S'ha eliminat el contenidor de la barra de desplaçament -->
+
+
+<script src="../javascript/cubos_reciclaje.js"></script>
+</body>
+
+</html>

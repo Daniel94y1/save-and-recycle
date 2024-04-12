@@ -1,0 +1,289 @@
+body{
+    font-family: "Arbutus", serif;
+}
+.container5 {
+    margin-left: 80vh;
+    margin-top: 6vh;
+    max-width: 400px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.imagen-container {
+    margin-left: -3px;
+    margin-top: 20vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    /* Asegura que la imagen esté detrás del texto */
+}
+
+.imagen-container img {
+    width: 500px;
+    /* Ancho deseado de la imagen */
+    height: auto;
+    /* Altura ajustada automáticamente */
+}
+
+.texto-encima {
+    font-family: "Arbutus", serif;
+    position: fixed;
+    top: 40%;
+    /* Ajusta según sea necesario */
+    left: 20px;
+    /* Espacio desde el borde izquierdo */
+    z-index: 2;
+    /* Asegura que el texto esté encima de la imagen */
+    color: white;
+    /* Color del texto */
+    font-size: 24px;
+    /* Tamaño del texto */
+}
+
+.texto-encima span {
+    margin-left: 70px;
+    text-align: center;
+    font-size: 50px;
+    /* Tamaño más grande para el número "2" */
+}
+
+h1 {
+    text-align: center;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+input[type="checkbox"] {
+    margin-right: 5px;
+}
+
+button[type="submit"] {
+    font-family: "Arbutus", serif;
+    background-color: black;
+    color: white;
+}
+
+button[type="submit"]:hover {
+    background-color: #333;
+    /* Cambia el color de fondo al pasar el ratón sobre el botón */
+}
+
+button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+body {
+    background: url("../imagenes/fondo1.png") no-repeat center center fixed;
+    background-size: cover;
+    font-family: "Arbutus", serif;
+}
+
+.container1 {
+    background-color: black;
+    height: 15vh;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    padding-left: 3vh;
+}
+
+.menu {
+    padding-right: 6vh;
+}
+
+.menu a {
+    color: white;
+    text-decoration: none;
+    margin-left: 10px;
+    padding: 2vh;
+}
+
+.menu-link {
+    color: white;
+    text-decoration: none;
+    margin-left: 10px;
+    padding: 2vh;
+    position: relative;
+}
+
+.menu-link::before {
+    content: "";
+    position: absolute;
+    top: 10%;
+    left: -5px;
+    width: calc(100% + 10px);
+    height: calc(100% - 4px);
+    background-color: white;
+    border-radius: 20px;
+    z-index: -1;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.menu-link:hover::before {
+    opacity: 1;
+}
+
+.menu-link:hover {
+    color: black;
+}
+
+.musica {
+    height: 12vh;
+    width: 12vh;
+    padding-right: 9vh;
+    padding-bottom: 3vh;
+}
+
+@keyframes vibrar {
+    0% {
+        transform: translateX(-1px) translateY(-1px);
+    }
+
+    50% {
+        transform: translateX(1px) translateY(1px);
+    }
+
+    100% {
+        transform: translateX(-1px) translateY(-1px);
+    }
+}
+
+.vibrante {
+    animation: vibrar 0.5s infinite alternate;
+}
+
+.logo {
+    padding-top: 2vh;
+    padding-left: 3vh;
+}
+
+.flecha-abajo {
+    width: 30px;
+    /* Ajusta el tamaño de la flecha según necesites */
+    height: auto;
+    /* Para mantener la proporción */
+}
+
+.rectangulo-negro {
+    position: fixed;
+    margin-top: -280px;
+    margin-left: 89%;
+    width: 2%;
+    border-radius: 10%;
+    /* Porcentaje del ancho de la ventana */
+    height: 20vh;
+    /* 100% del viewport height */
+    background-color: black;
+    /* Color del rectángulo */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+/* Triángulo hacia arriba */
+.triangulo-arriba {
+    width: 0;
+    height: 0;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    border-bottom: 30px solid white;
+    /* Color del botón */
+    align-self: center;
+    cursor: pointer;
+}
+
+/* Triángulo hacia abajo */
+.triangulo-abajo {
+    width: 0;
+    height: 0;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    border-top: 30px solid white;
+    /* Color del botón */
+    align-self: center;
+    cursor: pointer;
+}
+
+footer {
+    background-color: black;
+    color: white;
+    padding: 5px 0;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    /* Centra horizontalmente */
+    align-items: center;
+    /* Centra verticalmente */
+}
+
+/* Estilos para las imágenes */
+footer img {
+    width: auto;
+    height: 70px;
+    margin: 0 20px;
+    cursor: pointer;
+}
+
+/* Estilos para los textos */
+footer a {
+    color: white;
+    text-decoration: none;
+    margin: 0 20px;
+    display: inline-block;
+    /* Asegura que los enlaces se comporten como bloques en línea */
+}
+
+.musica {
+    height: 12vh;
+    width: 100px;
+    padding-right: 9vh;
+    padding-bottom: 3vh;
+}
+
+.musica2-img {
+    height: 12vh;
+    width: 100px;
+    padding-right: 9vh;
+    padding-bottom: 3vh;
+
+}

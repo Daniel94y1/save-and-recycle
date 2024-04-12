@@ -1,0 +1,275 @@
+body {
+    font-family: "Arbutus", serif;
+}
+.imagen-container {
+    margin-left: -3px;
+    margin-top: 20vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    /* Asegura que la imagen esté detrás del texto */
+}
+
+.imagen-container img {
+    width: 500px;
+    /* Ancho deseado de la imagen */
+    height: auto;
+    /* Altura ajustada automáticamente */
+}
+
+.texto-encima {
+    font-family: "Arbutus", serif;
+    position: fixed;
+    top: 40%;
+    /* Ajusta según sea necesario */
+    left: 20px;
+    /* Espacio desde el borde izquierdo */
+    z-index: 2;
+    /* Asegura que el texto esté encima de la imagen */
+    color: white;
+    /* Color del texto */
+    font-size: 24px;
+    /* Tamaño del texto */
+}
+
+.texto-encima span {
+    margin-left: 70px;
+    text-align: center;
+    font-size: 50px;
+    /* Tamaño más grande para el número "2" */
+}
+
+.descripcion-container {
+    width: 90vh;
+    font-size: 24px;
+    /* Tamaño del texto */
+    font-family: 'Arial', sans-serif;
+    /* Fuente del texto */
+    position: relative;
+    margin-top: 20vh;
+    margin-left: 70vh;
+    /* Para que los elementos absolutamente posicionados se basen en este contenedor */
+}
+
+.texto-imagen-container {
+    margin-top: -vh;
+    height: 400px;
+    /* Mantén la altura deseada */
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    /* Cambia la dirección del flexbox a columna */
+    align-items: center;
+    /* Centra horizontalmente */
+}
+
+.imagen-descriptiva {
+    width: 200px;
+    /* Ancho deseado de la imagen */
+    height: 150px;
+    /* Altura ajustada automáticamente */
+    position: absolute;
+    /* Posiciona la imagen de forma absoluta */
+    top: 40px;
+    /* Coloca la imagen en la parte superior del contenedor */
+    right: -1px;
+    /* Superpone ligeramente la imagen sobre el texto */
+}
+
+.imagen1 {
+    width: 100px;
+    height: auto;
+}
+
+.texto-imagen-container p {
+    margin-right: 220px;
+    /* Deja un espacio a la derecha para la imagen */
+}
+
+.scroll-down {
+    font-size: 30px;
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    color: black;
+    font-family: "Arbutus", serif;
+}
+
+.scroll-text {
+    margin-bottom: 5px;
+}
+
+.flecha-abajo {
+    width: 30px;
+    /* Ajusta el tamaño de la flecha según necesites */
+    height: auto;
+    /* Para mantener la proporción */
+}
+
+/* CSS para la barra de desplazamiento */
+::-webkit-scrollbar {
+    width: 8px;
+    /* Ancho de la barra de desplazamiento */
+}
+
+::-webkit-scrollbar-track {
+    background-color: black;
+    /* Color de fondo del track */
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: black;
+    /* Color del thumb */
+    border-radius: 4px;
+    /* Bordes redondeados */
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: black;
+    /* Cambiar el color del thumb al pasar el ratón sobre él */
+}
+
+.rectangulo-negro {
+    position: relative;
+    margin-top: -230px;
+    margin-left: 90%;
+    width: 2%;
+    border-radius: 10%;
+    height: 20vh;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.carousel {
+    margin-top: -100px;
+    position: relative;
+    max-width: 800px;
+    /* Ajusta el ancho máximo del carrusel según sea necesario */
+    margin: auto;
+    overflow: hidden;
+    /* Evita que los elementos del carrusel sobresalgan */
+}
+
+.slide {
+    display: none;
+}
+
+.slide p {
+    font-family: 'Arial', sans-serif;
+    font-size: 16px;
+    color: black;
+    margin-bottom: 20px;
+}
+
+.slide-img {
+    width: 30%;
+    /* Ajusta el tamaño de la imagen según sea necesario */
+    height: 200px;
+}
+
+.nav-buttons {
+    position: absolute;
+    top: 55%;
+    width: calc(100% - 500px);
+    /* Ajusta el ancho del contenedor de flechas */
+    max-width: 800px;
+    /* Establece un ancho máximo */
+    display: flex;
+    justify-content: space-between;
+    transform: translateY(-50%);
+    z-index: 3;
+    /* Asegura que las flechas estén encima del texto e imagen */
+}
+
+.nav-button {
+    cursor: pointer;
+    width: 50px;
+    /* Ajusta el tamaño de los botones de navegación según sea necesario */
+    height: 50px;
+    /* Ajusta el tamaño de los botones de navegación según sea necesario */
+}
+
+.nav-button.left {
+    margin-left: 430px;
+    /* Elimina el margen izquierdo para la flecha izquierda */
+}
+
+.nav-button.right {
+    margin-right: -430px;
+    /* Elimina el margen derecho para la flecha derecha */
+}
+
+footer {
+    background-color: black;
+    color: white;
+    padding: 5px 0;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    /* Centra horizontalmente */
+    align-items: center;
+    /* Centra verticalmente */
+}
+
+/* Estilos para las imágenes */
+footer img {
+    width: auto;
+    height: 70px;
+    margin: 0 20px;
+    cursor: pointer;
+}
+
+/* Estilos para los textos */
+footer a {
+    color: white;
+    text-decoration: none;
+    margin: 0 20px;
+    display: inline-block;
+    /* Asegura que los enlaces se comporten como bloques en línea */
+}
+
+.slide h2 {
+    margin-bottom: 20px;
+    /* Añade un espacio debajo del título */
+}
+
+.slide p {
+    margin-bottom: 20px;
+    /* Añade un espacio debajo del párrafo */
+}
+
+.slide-iframe-container {
+    height: 200px;
+    flex: 1;
+    /* El video tomará el espacio restante */
+}
+
+.slide-iframe {
+    width: 100%;
+    /* Ocupa todo el ancho disponible */
+    height: 200px;
+    /* Ocupa todo el alto disponible */
+}
+
+.musica {
+    height: 12vh;
+    width: 100px;
+    padding-right: 9vh;
+    padding-bottom: 3vh;
+}
+
+.musica2-img {
+    height: 12vh;
+    width: 100px;
+    padding-right: 9vh;
+    padding-bottom: 3vh;
+
+}

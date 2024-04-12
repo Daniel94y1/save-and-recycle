@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="ca">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SAVE and RECYCLE</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Arbutus&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/inicio.css">
+    <link rel="stylesheet" href="../css/sobre_juego.css">
+</head>
+
+<body>
+    <div class="container1">
+        <img src="../imagenes/logo.png" alt="" class="logo">
+        <nav class="menu">
+            <a href="inicio.html" class="menu-link">INICI</a>
+            <a href="sobre_juego.html" class="menu-link">SOBRE EL JOC</a>
+            <a href="consejos.html" class="menu-link">CONSELLS</a>
+            <a href="noticias.html" class="menu-link">NOTÍCIES</a>
+            <a href="cubos_reciclaje.html" class="menu-link">CONTENIDORS DE RECICLATGE</a>
+            <a href="contactanos.html" class="menu-link">CONTACTA'NS</a>
+        </nav>
+        <img src="../imagenes/musica.png" alt="" class="musica vibrante" id="musica vibrante" />
+        <img src="../imagenes/musica_off.png" alt="" class="musica2-img" style="display:none;" id="musica1" />
+    </div>
+
+
+    <div class="imagen-container">
+        <img src="../imagenes/triangulo.png" alt="Imatge" width="200">
+        <!-- Ajusta la ruta i l'amplada segons sigui necessari -->
+    </div>
+
+    <div class="texto-encima">
+        CONSELLS DE RECICLATGE<br><br>
+
+        <span>3</span>
+    </div>
+
+    <div class="descripcion-container">
+
+        <!-- Carrusel d'imatges -->
+        <div class="carousel">
+            <!-- Slides -->
+            <div class="slide active texto-imagen-container">
+                <h2>CONSELL ECO-AMIGABLE</h2>
+                <p>
+                    "¡Cada petita acció compta! No subestimis l'impacte de les teves accions diàries en el medi ambient.
+                    Des de apagar les llums en sortir d'una habitació fins reciclar els teus envasos, cada gest suma per
+                    conservar els nostres recursos naturals.
+                    Fes de la sostenibilitat un hàbit en la teva vida diària i forma part del canvi positiu que el
+                    nostre planeta necessita!"
+                </p>
+                <img src="../imagenes/recicla.png" alt="Imatge Descriptiva" class="slide-img, imagen-descriptiva ">
+            </div>
+            <div class="slide texto-imagen-container">
+                <h2>SEGON CONSELL ECO-AMIGABLE</h2>
+                <p>
+                    Minimitza el plàstic a la teva vida diària: Pensa en petites formes de reduir el teu consum de
+                    plàstic,<br>
+                    com ara triar productes amb embolcalls mínims o reutilitzables, com ara ampolles d'aigua
+                    recarregables<br>
+                    i bosses de tela duradores.<br><br>
+
+                    Suporta la producció local i estacional: En triar aliments locals i de temporada, no només redueixes
+                    la distància<br>
+                    que viatgen els productes fins a arribar a tu, sinó que també recolzes els agricultors de la teva
+                    comunitat<br>
+                    i ajudes a preservar els recursos naturals.
+                </p>
+                <img src="../imagenes/reducir_plastico.jpg" alt="Imatge Descriptiva"
+                    class="slide-img, imagen-descriptiva">
+
+            </div>
+            <div class="slide texto-imagen-container">
+                <h2>TERCER CONSELL ECO-AMIGABLE</h2>
+                <p>
+                    Dóna nova vida a les teves coses: Abans de desfer-te'n de res, considera si pots donar-li un nou
+                    propòsit o reparar-lo.<br>
+                    A vegades, petites reparacions poden prolongar la vida útil d'un objecte i reduir la necessitat de
+                    comprar-ne un de nou.<br><br>
+                    Abraça les energies netes: Explora opcions com l'energia solar o eòlica per alimentar la teva
+                    llar.<br>
+                    En fer-ho, no només redueixes la teva dependència dels combustibles fòssils,<br>
+                    sinó que també contribueixes a un futur més sostenible.
+                </p>
+                <img src="../imagenes/energia_limpia.png" alt="Imatge Descriptiva"
+                    class="slide-img, imagen-descriptiva">
+
+            </div>
+            <div class="slide texto-imagen-container">
+                <h2>QUART CONSELL ECO-AMIGABLE</h2>
+                <p>
+                    Transforma els teus residus en recursos: Aprofita els retalls de menjar i altres materials orgànics
+                    per a compostatge.<br>
+                    Aquest procés no només redueix la quantitat de residus que van als abocadors,<br>
+                    sinó que també produeix un valuós fertilitzant per a les teves plantes.<br><br>
+                    Trie alternatives de transport eco-friendly: Opta per caminar, anar en bicicleta<br>
+                    o utilitzar el transport públic sempre que sigui possible. Aquestes opcions no només redueixen la
+                    contaminació de l'aire,<br>
+                    sinó que també fomenten un estil de vida més actiu i saludable.<br>
+                </p>
+                <img src="../imagenes/transportes-sostenibles.jpg" alt="Imatge Descriptiva"
+                    class="slide-img, imagen-descriptiva">
+
+            </div>
+
+            <!-- Botons de navegació -->
+        </div>
+    </div>
+    <div class="nav-buttons">
+        <img src="../imagenes/caret-izquierda.png" alt="Anterior" class="nav-button left" onclick="plusSlides(-1)">
+        <img src="../imagenes/caret-derecha.png" alt="Següent" class="nav-button right" onclick="plusSlides(1)">
+    </div>
+    <div class="rectangulo-negro">
+        <!-- Triàngle cap amunt -->
+        <a href="#" id="arrow-up">
+            <div class="triangulo-arriba"></div>
+        </a>
+        <b><span style="color: white; font-size: 30px; padding-left: 5px;">3</span></b>
+        <!-- Triàngle cap avall -->
+        <a href="#" id="arrow-down">
+            <div class="triangulo-abajo"></div>
+        </a>
+    </div>
+
+    <div class="scroll-thumb" id="scroll-thumb">
+        <img src="../imagenes/flecha_arriba.png" alt="Fletxa Amunt">
+        <span id="scroll-number">3</span>
+        <img src="../imagenes/flecha_abajo.png" alt="Fletxa Avall">
+    </div>
+
+    <footer>
+        <a href="https://web.gencat.cat/ca/inici" target="_blank"><img src="../imagenes/logo_generalitat.png"
+                alt="Imatge 1"></a>
+        <a href="https://mataro.escolapia.cat/" target="_blank"><img src="../imagenes/logo_pia.png" alt="Imatge 2"></a>
+        <a href="https://dotacio.fundacio.cat/bases/" target="_blank"><img src="../imagenes/logo_fundacio_cat.png"
+                alt="Imatge 3"></a>
+        <a href="https://www.cdmon.com/es/?mtm_campaign=18084749671&mtm_kwd=cdmon&mtm_source=google&mtm_medium=cpc&mtm_content=617336363920&gad_source=1&gclid=CjwKCAjw8diwBhAbEiwA7i_sJf6B7P__4OXBDmQ6eb008ZsLNyT4J_P-sUxWNuMQfkPCFFx7mFGwERoCqtMQAvD_BwE"
+            target="_blank"><img src="../imagenes/logo_cdmon.png" alt="Imatge 4"></a>
+
+        <a href="nosotros.html">Nosaltres</a>
+    </footer>
+
+
+    <script src="../javascript/inicio.js"></script>
+</body>
+
+
+
+
+<!-- S'ha eliminat el contenidor de la barra de desplaçament -->
+
+
+<script src="../javascript/consejos.js"></script>
+</body>
+
+</html>

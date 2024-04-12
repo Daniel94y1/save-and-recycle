@@ -1,0 +1,63 @@
+body {
+    font-family: "Arbutus", serif;
+}
+.ver-noticia-link {
+    background-color: black;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    /* Para quitar el subrayado del enlace */
+    border-radius: 5px;
+    display: inline-block;
+}
+
+.ver-noticia-link:hover {
+    background-color: #333;
+    /* Cambia el color de fondo al pasar el ratón sobre el enlace */
+}
+
+footer {
+    background-color: black;
+    color: white;
+    padding: 5px 0;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    /* Centra horizontalmente */
+    align-items: center;
+    /* Centra verticalmente */
+}
+
+/* Estilos para las imágenes */
+footer img {
+    width: auto;
+    height: 70px;
+    margin: 0 20px;
+    cursor: pointer;
+}
+
+/* Estilos para los textos */
+footer a {
+    color: white;
+    text-decoration: none;
+    margin: 0 20px;
+    display: inline-block;
+    /* Asegura que los enlaces se comporten como bloques en línea */
+}
+
+.musica {
+    height: 12vh;
+    width: 100px;
+    padding-right: 9vh;
+    padding-bottom: 3vh;
+}
+
+.musica2-img {
+    height: 12vh;
+    width: 100px;
+    padding-right: 9vh;
+    padding-bottom: 3vh;
+
+}

@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="ca">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SAVE and RECYCLE</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Arbutus&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/inicio.css">
+    <link rel="stylesheet" href="../css/sobre_juego.css">
+    <link rel="stylesheet" href="../css/noticias.css">
+</head>
+
+<body>
+    <div class="container1">
+        <img src="../imagenes/logo.png" alt="" class="logo">
+        <nav class="menu">
+            <a href="inicio.html" class="menu-link">INICI</a>
+            <a href="sobre_juego.html" class="menu-link">SOBRE EL JOC</a>
+            <a href="consejos.html" class="menu-link">CONSELLS</a>
+            <a href="noticias.html" class="menu-link">NOTÍCIES</a>
+            <a href="cubos_reciclaje.html" class="menu-link">CONTENIDORS DE RECICLATGE</a>
+            <a href="contactanos.html" class="menu-link">CONTACTA'NS</a>
+        </nav>
+        <img src="../imagenes/musica.png" alt="" class="musica vibrante" id="musica vibrante" />
+        <img src="../imagenes/musica_off.png" alt="" class="musica2-img" style="display:none;" id="musica1" />
+    </div>
+
+    <div class="imagen-container">
+        <img src="../imagenes/triangulo.png" alt="Imatge" width="200">
+        <!-- Ajusta la ruta i l'amplada segons sigui necessari -->
+    </div>
+
+    <div class="texto-encima">
+        NOTÍCIES DE RECICLATGE<br><br>
+        <span>4</span>
+    </div>
+
+    <div class="descripcion-container">
+        <!-- Carrusel d'imatges -->
+        <div class="carousel">
+            <!-- Slides -->
+            <div class="slide active texto-imagen-container">
+                <h2>El barri de Bangkok que resorgeix de les seves cendres</h2>
+                <p>
+                    Els veïns del districte de Koh Klang transformen els residus que s'acumulen als canals en gots,<br>
+                    plats o mobles per després vendre'ls.<br>
+                    La iniciativa, liderada per dues dones, va sorgir per ajudar els afectats per un brutal incendi<br>
+                </p>
+                <img src="../imagenes/noticia.png" alt="Imatge Descriptiva" class="slide-img, imagen-descriptiva ">
+                <div class="ver-noticia">
+                    <a href="https://elpais.com/planeta-futuro/2024-04-10/el-barrio-de-bangkok-que-resurge-de-sus-cenizas-gracias-a-su-lucha-contra-el-plastico.html"
+                        class="ver-noticia-link">Veure notícia completa</a>
+                </div>
+            </div>
+            <div class="slide texto-imagen-container">
+                <h2>Barreres al reciclatge</h2>
+                <p>
+                    L'examen del 15% que reconeix que no separa els seus residus revela algunes tendències
+                    interessants,<br>
+                    com que els joves reciclen menys que els majors.<br>
+                    L'enquesta també mostra que no tot depèn de la consciència particular de la ciutadania<br>
+                </p>
+                <img src="../imagenes/noticia2.png" alt="Imatge Descriptiva" class="slide-img, imagen-descriptiva">
+                <div class="ver-noticia">
+                    <a href="https://elpais.com/espana/2024-04-08/barreras-al-reciclaje.html"
+                        class="ver-noticia-link">Veure notícia completa</a>
+                </div>
+
+            </div>
+            <div class="slide texto-imagen-container">
+                <h2>Els espanyols davant el reciclatge</h2>
+                <p>
+                    El baròmetre de 40dB. revela dos dels frens que troben els ciutadans per reciclar:<br>
+                    la manca de contenidors i el recel de les plantes de tractament
+                </p>
+                <img src="../imagenes/noticia3.png" alt="Imatge Descriptiva" class="slide-img, imagen-descriptiva">
+                <div class="ver-noticia">
+                    <a href="https://elpais.com/clima-y-medio-ambiente/2024-04-08/los-espanoles-ante-el-reciclaje-el-86-afirma-que-separa-sus-residuos-pero-el-40-desconfia-de-que-sean-procesados-correctamente.html"
+                        class="ver-noticia-link">Veure notícia completa</a>
+                </div>
+
+            </div>
+            <div class="slide texto-imagen-container">
+                <h2>Fustes circulars per tancar el cicle dels residus</h2>
+                <p>
+                    Leroy Merlin impulsa el projecte ‘CircleWood’ mitjançant el qual envia el 100% dels residus de
+                    fusta<br>
+                    que es produeixen a les seves botigues de Galícia al fabricant santiaguès FINSA per transformar-los
+                    en nous productes<br>
+                    que retorna al mercat.<br>
+                    Un exemple d'economia circular que contribueix a diversos Objectius de Desenvolupament
+                    Sostenible<br>
+                    i que aspira a exportar a altres llocs.
+                </p>
+                <img src="../imagenes/noticia4.png" alt="Imatge Descriptiva" class="slide-img, imagen-descriptiva">
+                <div class="ver-noticia">
+                    <a href="https://elpais.com/economia/branded/economia-circular/2024-04-01/maderas-circulares-para-cerrar-el-ciclo-de-los-residuos.html"
+                        class="ver-noticia-link">Veure notícia completa</a>
+                </div>
+
+            </div>
+
+            <!-- Botons de navegació -->
+        </div>
+    </div>
+    <div class="nav-buttons">
+        <img src="../imagenes/caret-izquierda.png" alt="Anterior" class="nav-button left" onclick="plusSlides(-1)">
+        <img src="../imagenes/caret-derecha.png" alt="Següent" class="nav-button right" onclick="plusSlides(1)">
+    </div>
+    <div class="rectangulo-negro">
+        <!-- Triàngle cap amunt -->
+        <a href="#" id="arrow-up">
+            <div class="triangulo-arriba"></div>
+        </a>
+        <b><span style="color: white; font-size: 30px; padding-left: 5px;">4</span></b>
+        <!-- Triàngle cap avall -->
+        <a href="#" id="arrow-down">
+            <div class="triangulo-abajo"></div>
+        </a>
+    </div>
+
+    <div class="scroll-thumb" id="scroll-thumb">
+        <img src="../imagenes/flecha_arriba.png" alt="Fletxa Cap Amunt">
+        <span id="scroll-number">4</span>
+        <img src="../imagenes/flecha_abajo.png" alt="Fletxa Cap Avall">
+    </div>
+    <footer>
+        <a href="https://web.gencat.cat/ca/inici" target="_blank"><img src="../imagenes/logo_generalitat.png"
+                alt="Imatge 1"></a>
+        <a href="https://mataro.escolapia.cat/" target="_blank"><img src="../imagenes/logo_pia.png" alt="Imatge 2"></a>
+        <a href="https://dotacio.fundacio.cat/bases/" target="_blank"><img src="../imagenes/logo_fundacio_cat.png"
+                alt="Imatge 3"></a>
+        <a href="https://www.cdmon.com/es/?mtm_campaign=18084749671&mtm_kwd=cdmon&mtm_source=google&mtm_medium=cpc&mtm_content=617336363920&gad_source=1&gclid=CjwKCAjw8diwBhAbEiwA7i_sJf6B7P__4OXBDmQ6eb008ZsLNyT4J_P-sUxWNuMQfkPCFFx7mFGwERoCqtMQAvD_BwE"
+            target="_blank"><img src="../imagenes/logo_cdmon.png" alt="Imatge 4"></a>
+
+        <a href="nosotros.html">Nosaltres</a>
+    </footer>
+
+    <script src="../javascript/inicio.js"></script>
+</body>
+<!-- S'ha eliminat el contenidor de la barra de desplaçament -->
+<script src="../javascript/noticias.js"></script>
+
+</html>
